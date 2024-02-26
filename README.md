@@ -30,6 +30,8 @@
    - #### nodemon your start point (Example: nodemon index.js)
    - #### The application will be available at http://localhost:your port number.
 
+### Now, Here You can use any tools to test the given APIs with the correct URL base on the wrriten code otherwise you get errors to finding the data. (Example: Postman or other tools)
+
 ## API Endpoints
    - #### Authentication
       - ##### <b>POST /api/users/register</b> - Register a new user. (Please! your correct URL otherwise get error)
@@ -64,7 +66,32 @@
 
 
 
-   
+ ## Folter Structure
+
+ #### config
+   - ##### mongose
+ #### controllers
+   - ##### productController
+   - ##### userController
+ #### data
+   - ##### products
+   - ##### users
+ #### middlware
+   - ##### authMiddleware
+   - ##### errormiddleware
+ #### models
+   - ##### orderModel
+   - ##### productModel
+   - ##### userModel
+ #### routes
+   - ##### productRoutes
+   - ##### userRoutes
+ #### utils
+   - ##### generateToken
+ #### index
+ #### package.json
+ #### README.md
+ #### seeder 
 
 
 
