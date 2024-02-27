@@ -8,6 +8,7 @@ import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 import morgan from 'morgan';
 
 
+
 const PORT = process.env.PORT || 5000;
 const mode = process.env.NODE_ENV;
 connectDB()
@@ -15,8 +16,6 @@ const app = express()
 if (mode === 'development') {
   app.use(morgan('dev'))
 }
-
-console.log('Connecting to MongoDB with URI:', process.env.MONGODB_URL);
 
 app.use('/api/products', productRoutes)
 app.use('/api/users', userRoutes)
